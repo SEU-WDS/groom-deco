@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # 读取PDF文档 存储到TXT或者xls文件中
 # 2018.6.5 Pearl
+# update 2018.8.18 TenYun
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfpage import PDFPage
