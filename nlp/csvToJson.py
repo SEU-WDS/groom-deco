@@ -53,15 +53,6 @@ def csvToJson(filePath):
     return resultPath
 
 
-def csv_to_json(file_path):
-    """
-    transform csv file to json file for late use
-    :param file_path: csv file location
-    :return: json str
-    """
-    resources = pd.read_csv(file_path)
-
-
 
 
 if __name__ == '__main__':
