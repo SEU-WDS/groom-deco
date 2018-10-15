@@ -25,6 +25,7 @@ public class CSVTools {
                 // 读这行的某一列
                 System.out.println(csvReader.get("Link"));
             }
+            csvReader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

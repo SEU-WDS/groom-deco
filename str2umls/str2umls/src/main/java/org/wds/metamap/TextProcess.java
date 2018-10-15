@@ -22,6 +22,7 @@ public class TextProcess {
             api.setOptions(opt);
     }
 
+
     /**
      * str2umls_concept_list
      *

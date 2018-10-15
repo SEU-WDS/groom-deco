@@ -12,11 +12,17 @@ public class MetaMapConfig {
         MetaMapApi api = new MetaMapApiImpl();
         List<String> theOption = new ArrayList<String>();
         theOption.add("-y");    // use word_sense_disambiguation
-        //theOption.add("-C");    // use relaxed model
-        theOption.add("-z");    // use term processing
-        theOption.add("-a");    // allow Acronym/Abbreviation variants
+//        theOption.add("-A");    // use relaxed model
+//        theOption.add("-K");    // ignore stop phrases.
+//        theOption.add("-z");    // use term processing
+//        theOption.add("-a");    // allow Acronym/Abbreviation variants
 //        theOption.add("-b");    // compute/display all mappings
-        api.setOptions(theOption);
+//        theOption.add("-r 10");
+//        theOption.add("-k dsyn");
+        theOption.add("-i");
+        theOption.add("-l");
+        for (String opt:theOption)
+            api.setOptions(opt);
         return api;
     }
 }
